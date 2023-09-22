@@ -1,9 +1,9 @@
 const form = document.querySelector('.login-form');
 form.addEventListener('submit', formSubmitProcessing);
 
-function formSubmitProcessing(el) {
-    el.preventDefault();
-    const { email, password } = el.currentTarget.elements;
+function formSubmitProcessing(evt) {
+    evt.preventDefault();
+    const { email, password } = evt.currentTarget.elements;
     if (!email.value || !password.value) {
         return alert('All fields must be filled!');
     } else {
@@ -12,7 +12,7 @@ function formSubmitProcessing(el) {
             password: password.value,
         };
         console.log(formObj);
-        el.currentTarget.reset();
+        evt.currentTarget.reset();
     }
 }
 

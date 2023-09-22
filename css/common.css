@@ -68,3 +68,12 @@ img {
     border-color: #f44336;
 }
 
+.tasks-link {
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+}
+
+.tasks-link:hover {
+    color: teal;
+}
