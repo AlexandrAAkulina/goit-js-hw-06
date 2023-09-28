@@ -3,6 +3,8 @@ const span = document.querySelector('#name-output');
 
 input.addEventListener('input', onInputChangeEvent);
 
-function onInputChangeEvent (event) {
-    span.textContent = event.currentTarget.value;
+function onInputChangeEvent () {
+    if (input.value.trim() === '') {
+        span.textContent = 'Anonimous';
+    } else {span.textContent = input.value}
 }
