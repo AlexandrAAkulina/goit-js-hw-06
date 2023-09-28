@@ -3,7 +3,7 @@ const categoriesLength = categoriesItem.children.length;
 
 console.log(`Number of categories: ${categoriesLength}`);
 
-Array.From(categoriesItem).forEach((item) => {
+Array.from(categoriesItem).forEach((item) => {
      console.log(`Category: `, item.firstElementChild.textContent);
      console.log(`Elements: `, item.lastElementChild.children.length);
  });
